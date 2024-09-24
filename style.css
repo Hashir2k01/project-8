@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFFFFF;
+}
+
+.first-section {
+    height: 100vh;
+    background-image: url(firstSection.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px;
+}
+
+.first-section h1 {
+    font-weight: 100;
+    font-size: 70px;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: 5px;
+}
+
+.first-section p {
+    text-align: left;
+    color: white;
+    line-height: 1.7;
+}
+
+.order-button {
+    background-color: #72c3e2;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin-top: 30px;
+    padding: 30px 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #2d647c;
+}
+
+.second-section {
+    background-color: rgb(250, 240, 242);
+
+    height: auto;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.second-section h1 {
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.second-section p {
+    color: black;
+    margin: 0 20px;
+    line-height: 1.5;
+}
+
+.button-div {
+    align-items: center;
+}
+
+.order-button-two {
+    background-color: #72c3e2;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin-top: 30px;
+    padding: 30px 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-button-two:hover {
+    background-color: #2d647c;
+}
+
+.menu {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu img {
+    margin: 10px;
+    height: auto;
+    width: 100%;
+    max-width: 700px;
+}
+
+.third-section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(250, 240, 242);
+
+}
+
+.third-section img {
+    margin: 10px;
+    height: auto;
+    width: 100%;
+    max-width: 700px;
+}
+
+.fourth-section {
+    background-color: rgb(250, 240, 242);
+
+    background-image: url(https://clideo.com/files/content/how-to-make-background-blur-for-vertical-video.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 15px;
+    padding-top: 100px;
+}
+
+.fourth-section img {
+    width: 370px;
+    height: 370px;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image-container:hover .hover-text {
+    opacity: 1;
+}
+
+.image-container:hover img {
+    filter: blur(2px);
+}
+
+.fifth-section {
+    background-color: rgb(250, 240, 242);
+
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.fifth-section img {
+    margin: 10px;
+    height: auto;
+    width: 100%;
+    max-width: 700px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 576px) {
+    .first-section {
+        padding: 50px 20px;
+    }
+
+    .first-section h1 {
+        font-size: 40px;
+    }
+
+    .first-section p {
+        font-size: 0.9em;
+    }
+
+    .order-button {
+        padding: 15px 30px;
+        font-size: 12px;
+    }
+
+    .second-section {
+        padding: 20px;
+    }
+
+    .second-section h1 {
+        font-size: 30px;
+    }
+
+    .second-section p {
+        margin: 0 10px;
+        font-size: 0.9em;
+    }
+
+    .order-button-two {
+        padding: 15px 30px;
+        font-size: 12px;
+    }
+
+    .menu img, .third-section img, .fifth-section img {
+        max-width: 100%;
+    }
+
+    .hover-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .first-section {
+        padding: 100px 20px;
+    }
+
+    .first-section h1 {
+        font-size: 50px;
+    }
+
+    .first-section p {
+        font-size: 1em;
+    }
+
+    .order-button {
+        padding: 20px 40px;
+        font-size: 14px;
+    }
+
+    .second-section {
+        padding: 40px 20px;
+    }
+
+    .second-section h1 {
+        font-size: 35px;
+    }
+
+    .second-section p {
+        margin: 0 20px;
+        font-size: 1em;
+    }
+
+    .order-button-two {
+        padding: 20px 40px;
+        font-size: 14px;
+    }
+
+    .menu img, .third-section img, .fifth-section img {
+        max-width: 100%;
+    }
+
+    .hover-text {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .first-section {
+        padding: 150px 50px;
+    }
+
+    .first-section h1 {
+        font-size: 60px;
+    }
+
+    .first-section p {
+        font-size: 1em;
+    }
+
+    .order-button {
+        padding: 25px 45px;
+        font-size: 15px;
+    }
+
+    .second-section {
+        padding: 60px 50px;
+    }
+
+    .second-section h1 {
+        font-size: 40px;
+    }
+
+    .second-section p {
+        margin: 0 50px;
+        font-size: 1em;
+    }
+
+    .order-button-two {
+        padding: 25px 45px;
+        font-size: 15px;
+    }
+
+    .menu img, .third-section img, .fifth-section img {
+        max-width: 100%;
+    }
+
+    .hover-text {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .first-section {
+        padding: 150px 50px;
+    }
+
+    .second-section {
+        padding: 60px 50px;
+    }
+
+    .second-section p {
+        margin: 0 50px;
+    }
+
+    .order-button-two {
+        margin-left: 0;
+    }
+}
